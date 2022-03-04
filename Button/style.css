@@ -1,0 +1,80 @@
+*{
+    background-color: rgb(160, 160, 160);
+    padding:40px;
+    margin: 30px;
+}
+
+button{
+    position:relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+button::before,
+button::after{
+    position:absolute;
+    content: "";
+    z-index: 1;
+}
+
+/*Door effect*/
+.btn-1:hover{
+    box-shadow: inset -10.5em 0 0 0 #ff96ad, inset 10.5em 0 0 0 #ff96ad;
+}
+
+/*Shutter effect */
+.btn-2::after {
+    height: 0;
+    left: 0;
+    top: 0;
+    transition-duration: 0.5s;
+    width: 100%;
+}
+.btn-2:hover::after {
+    height:100%
+}
+
+/* glow effect */
+.btn-3:hover{
+    background:#ff96ad;
+    box-shadow: 0 0 5px #ff96ad,0 0 25px #ff96ad,0 0 50px #ff96ad 0 0 200px #ff96ad;
+
+}
+
+/*double effect*/
+.btn-4:hover{
+    box-shadow: 10px 10px 0px #ff96ad;
+    top: -5px;
+    left: -5px;
+}
+
+/*shine effect */
+.btn-5::after{
+    height:100%;
+    left:-35%;
+    top: 0;
+    transform: skew(50deg);
+    transition-duration: 0.5s;
+    transform-origin: top left;
+    width: 0;
+}
+.btn-5:hover::after{
+    height: 100%;
+    width: 140%;
+}
+
+/*Border effect*/
+.btn-7:hover{
+    border: 2px solid #ff96ad;
+    color: #ff96ad;
+    background-color: #17181c;
+}
+
+/*Move left effect*/
+.btn-8:hover{
+    box-shadow: inset -10.5em 0 0 0 #ff96ad, inset 10.5em 0 0 0 #ff96ad;
+}
+btn-8:hover::after{
+    width:100%
+}

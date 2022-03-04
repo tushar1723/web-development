@@ -1,0 +1,4 @@
+There are 8 buttons with 8 different styles.
+you can check the css file to know about the different styles.
+
+This is just done in practice.
